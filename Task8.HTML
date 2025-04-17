@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task8</title>
+</head>
+<body>
+  <ul id="List"></ul>
+  <script>
+    let count = prompt("Введите количество пунктов списка", "3");
+    let list = document.getElementById('List');
+      for (let i = 1; i <= count; i++) {
+        let itemText = prompt(`Введите cодержимое`, "Empty");
+        let li = document.createElement('li');
+        li.textContent = itemText;
+        list.appendChild(li);
+        }
+  </script>
+</body>
+</html>
